@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html ng-app="HRApp">
+<head>
+    <base href="/">
+    <meta charset="utf-8" />
+    <title>HR app</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-resource.min.js"></script>
+     <script src="app.js"></script>
+    <link href="lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" media="screen">
+</head>
+<body ng-cloak>
+    <div ng-controller="employeeController">
+        <h1>HR App</h1>
+        <ul>
+            <li ng-repeat="e in employees">
+                <p> {{e.firstName}} - {{e.lastName}}</p>
+                
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
